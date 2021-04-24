@@ -3,7 +3,7 @@
 body{
     margin: auto;
     max-width: 640px;
-    height: 588px;
+    height: auto;
     font-family: 'Changa', sans-serif;
    /* background-image: url('/images/Hangman.png');
     background-repeat: no-repeat;
@@ -72,3 +72,39 @@ textarea{
     font-size: larger;
     margin: 1rem;
 }
+
+
+#display-part-5{
+    display: none;
+}
+
+#display-part-6{
+    stroke:black;stroke-width:2;
+    display: none;
+}
+
+#display-part-7{
+    stroke:black;stroke-width:2;
+    display: none;
+}
+
+#display-part-8{
+    stroke:black;stroke-width:2;
+    display: none;
+}
+
+#display-part-9{
+    stroke:black;stroke-width:2;
+    display: none;
+}
+
+#display-part-10{
+    stroke:black;stroke-width:2;
+    display: none;
+}
+
+#display-part-11{
+    stroke:black;stroke-width:2;
+    display: none;
+}
+

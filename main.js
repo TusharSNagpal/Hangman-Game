@@ -18,8 +18,16 @@ for(var i=0; i < randWord.length; i++){
     ans[i] = "_";
 }
 
+var display5 = document.querySelector("#display-part-5");
+var display6 = document.querySelector("#display-part-6");
+var display7 = document.querySelector("#display-part-7");
+var display8 = document.querySelector("#display-part-8");
+var display9 = document.querySelector("#display-part-9");
+var display10 = document.querySelector("#display-part-10");
+var display11 = document.querySelector("#display-part-11");
+
 output.innerText = ans.join(" ");
-var count=5;
+var count=7;
 function whatOnClick(){
     var input = inputLetter.value;
     
@@ -43,6 +51,40 @@ function whatOnClick(){
         if(flag===0)
         {
             count--;
+            if(count<=6)
+            {
+                display5.style.display='block';
+            }
+            if(count<=5)
+            {
+                display6.style.display='block';
+            }
+
+            if(count<=4)
+            {
+                display7.style.display='block';
+            }
+            
+            if(count<=3)
+            {
+                display8.style.display='block';
+            }
+
+            if(count<=2)
+            {
+                display9.style.display='block';
+            }
+
+            if(count<=1)
+            {
+                display10.style.display='block';
+            }
+
+            if(count<=0)
+            {
+                display11.style.display='block';
+            }
+
             wc.style.color = "red";
             wc.innerText = "Oops! Try again..";
             progress.innerText = "Chances left : "+count;
@@ -78,5 +120,4 @@ function whatOnClick(){
 }
 
 btnCheck.addEventListener("click", whatOnClick);
-
 
