@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Changa:wght@300&display=swap');
+
+body{
+    margin: auto;
+    max-width: 650px;
+    height: 650px;
+    font-family: 'Changa', sans-serif;
+   /* background-image: url('/images/Hangman.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: bottom right;
+    background-position-x: 68rem;
+    background-size: 9rem;*/
+    text-align: center;
+    border: 2px solid ;
+}
+
+h1{
+   padding: 1rem 2rem;
+   margin: 0;
+}
+
+h2{
+    padding: 1rem 2rem;
+}
+
+p{
+    font-size: larger;
+}
+
+textarea{
+    width : 5%;
+    height: 2rem;
+}
+
+#guess, #progress, #result{
+    padding: 1rem 2rem;
+    font-size: larger;
+}
+

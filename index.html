@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman Game</title>
+    <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+
+    <h1>HANGMAN GAME</h1>
+    <h2>Guess the ANIMAL!</h2>
+    <p>Please guess one letter at a time as per game rules.</p>
+    
+    <div id="guess">
+        
+        <textarea id="inputLetter" maxlength="1"></textarea>
+        <button id="check" style="cursor: pointer;">CHECK</button>
+        <button><a href="index.html" style="text-decoration: none; color: black;">CHANGE THE WORD</a></button>
+
+    </div>
+
+    
+
+    <div id="output"></div>
+    <div id="progress">Chances left : 5</div>
+    <div id="result"></div>
+
+
+    <script src="/main.js" type="text/javascript"></script>
+</body>
+</html>
