@@ -2,8 +2,8 @@
 
 body{
     margin: auto;
-    max-width: 650px;
-    height: 650px;
+    max-width: 640px;
+    height: 588px;
     font-family: 'Changa', sans-serif;
    /* background-image: url('/images/Hangman.png');
     background-repeat: no-repeat;
@@ -16,25 +16,59 @@ body{
 }
 
 h1{
-   padding: 1rem 2rem;
    margin: 0;
-}
-
-h2{
-    padding: 1rem 2rem;
+   background-color: #6EE7B7;
 }
 
 p{
     font-size: larger;
+    margin-bottom: 0;
+}
+
+#output{
+    margin:0;
+    font-size: 4rem;
 }
 
 textarea{
-    width : 5%;
+    width : 25%;
     height: 2rem;
+    margin-top: 1rem;
 }
 
-#guess, #progress, #result{
-    padding: 1rem 2rem;
+#textLine{
+    font-size: 2rem;
+    font-weight: bold;
+    background-color: #6EE7B7;
+}
+
+#wc{
     font-size: larger;
+    font-weight: bold;
 }
 
+#guess{
+    font-size: 2rem;
+}
+
+#result {
+    font-size: 2rem;
+    background-color: #6EE7B7;
+}
+
+#progress {
+    font-size: 2rem;
+}
+
+#correctAns {
+    font-size: 1.5rem;
+    color: green;
+    background-color: #6EE7B7;
+    margin-bottom: 0;
+    
+}
+
+.change{
+    font-size: larger;
+    margin: 1rem;
+}

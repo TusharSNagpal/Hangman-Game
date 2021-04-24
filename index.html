@@ -10,22 +10,21 @@
 <body>
 
     <h1>HANGMAN GAME</h1>
-    <h2>Guess the ANIMAL!</h2>
-    <p>Please guess one letter at a time as per game rules.</p>
+    <div id="textLine"></div>
     
-    <div id="guess">
+        <textarea id="inputLetter" maxlength="1" placeholder="Guess the letter here.."></textarea>
+
+        <div><button id="check" style="cursor: pointer;">CHECK</button></div>
         
-        <textarea id="inputLetter" maxlength="1"></textarea>
-        <button id="check" style="cursor: pointer;">CHECK</button>
-        <button><a href="index.html" style="text-decoration: none; color: black;">CHANGE THE WORD</a></button>
+    <div id="wc"></div>
 
-    </div>
-
-    
 
     <div id="output"></div>
+    <button class="change"><a href="index.html" style="text-decoration: none; color: black;">TRY ANOTHER WORD</a></button>
+    
     <div id="progress">Chances left : 5</div>
     <div id="result"></div>
+    <div id="correctAns"></div>
 
 
     <script src="/main.js" type="text/javascript"></script>

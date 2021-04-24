@@ -3,9 +3,14 @@ var inputLetter = document.querySelector("#inputLetter");
 var btnCheck = document.querySelector("#check");
 var progress = document.querySelector("#progress");
 var result = document.querySelector("#result");
+var textLine = document.querySelector("#textLine");
+var wc = document.querySelector("#wc");
+var correctA = document.querySelector("#correctAns");
 
 var arrayAnimals = ["DOG","CAT","ELEPHANT","LION","TIGER","COW","DEER"];
 var randWord = arrayAnimals[Math.floor(Math.random()*arrayAnimals.length)];
+
+textLine.innerText = "Guess the ANIMAL NAME having "+randWord.length+" letters.";
 
 var ans = [];
 
@@ -20,12 +25,15 @@ function whatOnClick(){
     
     if(input.length > 0)
     { 
+        progress.innerText = "Chances left : "+count;
         var flag=0;
         for(var i=0; i< randWord.length; i++)
         {
-            if(randWord[i] === input)
+            if(randWord[i] === input.toUpperCase())
             {
-                ans[i] = input;
+                wc.style.color = "green";
+                wc.innerText = "Yeah! Go on..";
+                ans[i] = randWord[i];
                 flag=1;
             }
         }
@@ -35,18 +43,21 @@ function whatOnClick(){
         if(flag===0)
         {
             count--;
+            wc.style.color = "red";
+            wc.innerText = "Oops! Try again..";
             progress.innerText = "Chances left : "+count;
             console.log(count);
         }
     }
     else{
-        count--;
-        progress.innerText = "Chances left : "+count;
+        progress.innerText = "Please enter something.. Chances left : "+count;
     }
 
-    if(count===0)
+    if(count<=0)
     {
-        result.innerText = "YOU LOST! PLEASE PLAY AGAIN."
+        result.style.color = "red";
+        result.innerText = "YOU LOST! PLAY AGAIN."
+        correctA.innerText = "CORRECT ANSWER IS " + randWord+ ".";
     }
     var win=1;
     for(var i=0; i<randWord.length; i++)
@@ -60,7 +71,9 @@ function whatOnClick(){
 
     if(count>0 && win===1)
     {
+        result.style.color = "green";
         result.innerText = "WOHOO! YOU WON."
+        correctA.innerText = "CORRECT ANSWER IS " + randWord+ ".";
     }
 }
 
